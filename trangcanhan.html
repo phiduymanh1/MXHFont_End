@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang ca nhan</title>
+    <title>Trang cá nhân</title>
     <link rel="stylesheet" href="css-20241113T144056Z-001/css/bootstrap.min.css">
     <script src="js-20241113T143950Z-001/js/bootstrap.bundle.js"></script>
 </head>
@@ -82,41 +82,382 @@
         <!-- section -->
         <section class="row">
         <!-- asidee -->
-        <aside class="col-sm-12 bg-light p-5">
-            <div class="container mt-5">
-                <h3 class="text-center mb-4">Thông Tin Cá Nhân</h3>
-                <form>
-                  <div class="mb-3">
-                    <label for="name" class="form-label">Tên</label>
-                    <input type="text" class="form-control" id="name" placeholder="Tên của bạn">
+        <aside class="col-sm-4 bg-light p-5">
+            <div class="container text-center">
+                <div class="row">
+                  <div class="col">
+                    <img src="Image/images/avatar.png" class="img-thumbnail" alt="...">
                   </div>
-                  <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Email của bạn">
+                  <div class="col">
+                    <br>
+                    <h5>Phí Duy Mạnh</h5>
+                    <br>
+                    <a href="suathongtin.html"><button type="button" class="btn btn-secondary">Sửa thông tin</button></a>
                   </div>
-                  <div class="mb-3">
-                    <label for="password" class="form-label">Mật khẩu</label>
-                    <input type="password" class="form-control" id="password" placeholder="Mật khẩu mới">
-                  </div>
-                  <div class="mb-3">
-                    <label for="avatar" class="form-label">Ảnh Đại Diện</label>
-                    <input type="file" class="form-control" id="avatar">
-                  </div>
-                  <button type="submit" class="btn btn-primary">Cập Nhật</button>
-                </form>
+                  <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="width: 350px;"> 
+                    Bạn muốn đăng gì .....
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title fs-5 " id="exampleModalLabel">Bài viết</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">
+                                    <div class="container ">
+                                        <div class="row">
+                                          <div class="col">
+                                            <img src="Image/images/avatar.png" class="img-thumbnail" alt="canhan" width="100px">
+                                          </div>
+                                          
+                                      </div>                     
+                                </label>
+                                <br>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Phí ơi, bạn muốn viết gì thế" style="width: 450px;"></textarea>
+                                <!-- bo loc mau -->
+                                 <br>
+                                 <input type="color" class="form-control form-control-color p col-sm-4" id="exampleColorInput" value="#563d7c" title="Choose your color">
+                                 <!-- load anh -->
+                                  <br>
+                                 <div class="container text-center">
+                                    <div class="row">
+                                      <div class="col">
+                                        <div class="mb-3">
+                                            <input class="form-control" type="file" id="formFile">
+                                          </div>
+                                      </div>
+                                      <div class="col">
+                                        <!-- doi tuong xem  -->
+                                        <select class="form-select" aria-label="Default select example" >
+                                            <option selected>Đối tượng xem</option>
+                                            <option value="1">Công khai</option>
+                                            <option value="2">Cá nhân</option>
+                                            <option value="3">Bạn bè</option>
+                                          </select>
+                                      </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Đăng</button>
+                                </div> 
+                            </div>              
+                    </div>
+                    </div>
+                    
+                </div>
+                
+                <input class="form-control form-control-lg" type="text" placeholder="Tìm kiếm bài viết" aria-label=".form-control-lg example">
               </div>
-              
-              
         </aside>
         <!-- atricle -->
         
         <!-- atriccleeee -->
-        <!-- <article class="col-sm-4 bg-secondary  p-5">
+        <article class="col-sm-8 bg-secondary  p-5">
+            <div class="container text-center">
+                <div class="row row-cols-2">
+                  <div class="col">
+                    <!-- bai viet 1 -->
+                    <div class="card" style="width: 20rem;">
+                        <img src="Image/images/corevalue.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title"><strong>Phí Duy Mạnh</strong> đã đăng lúc 15:00</h5>
+                          <hr>
+                          <p class="card-text">Mọi người có thích trồng cây xanh không.</p>
+                        </div>
+                        <div class="card-body">
+                            <!-- button -->
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Sửa
+                                </button>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#xoa">
+                                    xóa
+                                </button>
+                                
+                                
+                                
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModall">
+                                    Bình luận
+                                  </button>
+                                  
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h1 class="modal-title fs-5 " id="exampleModalLabel">Bài viết</h1>
+                                        
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlTextarea1" class="form-label">
+                                                    <div class="container ">
+                                                        <div class="row">
+                                                          <div class="col">
+                                                            <img src="Image/images/avatar.png" class="img-thumbnail" alt="canhan" width="100px">
+                                                          </div>
+                                                          
+                                                      </div>                     
+                                                </label>
+                                                <br>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Phí ơi, bạn muốn viết gì thế" style="width: 450px;"></textarea>
+                                                <!-- bo loc mau -->
+                                                 <br>
+                                                 <input type="color" class="form-control form-control-color p col-sm-4" id="exampleColorInput" value="#563d7c" title="Choose your color">
+                                                 <!-- load anh -->
+                                                  <br>
+                                                 <div class="container text-center">
+                                                    <div class="row">
+                                                      <div class="col">
+                                                        <div class="mb-3">
+                                                            <input class="form-control" type="file" id="formFile">
+                                                          </div>
+                                                      </div>
+                                                      <div class="col">
+                                                        <!-- doi tuong xem  -->
+                                                        <select class="form-select" aria-label="Default select example" >
+                                                            <option selected>Đối tượng xem</option>
+                                                            <option value="1">Công khai</option>
+                                                            <option value="2">Cá nhân</option>
+                                                            <option value="3">Bạn bè</option>
+                                                          </select>
+                                                      </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Đăng</button>
+                                                </div> 
+                                            </div>              
+                                    </div>
+                                    </div>
+                                    
+                              </div>
+                              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalll">
+                                Xem
+                              </button>
+                              <div class="modal fade" id="exampleModalll" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-5" id="exampleModalLabel">Chi tiết bài viết</h1>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <img src="Image/images/corevalue.jpg" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                        <h5 class="card-title"><strong>Phí Duy Mạnh</strong> đã đăng lúc 15:00</h5>
+                                        <hr>
+                                        <p class="card-text">Mọi người có thích trồng cây xanh không.</p>
+                                      </div>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                      </div>
+                      <div class="card-body">
+                        <!-- bình luận -->
+                         <strong>Bình luận</strong>
+                         <hr>
+                        <div class="container text-center">
+                            <div class="row">
+                              <div class="col">
+                                Hoàng:
+                              </div>
+                              <div class="col">
+                                Mee too
+                              </div>
+                              <div class="col">
+                                (15:08)
+                              </div>
+                            </div>
+                          </div>
+                          <!-- bl2 -->
+                           <br>
+                          <div class="container text-center">
+                            <div class="row">
+                              <div class="col">
+                                Yến:
+                              </div>
+                              <div class="col">
+                                Mee too
+                              </div>
+                              <div class="col">
+                                (15:10)
+                              </div>
+                            </div>
+                          </div>
+                        
+                  </div>
+                  </div>
+                  </div>
+                </div>
+                 <!-- bai viet 2 -->
+                <div class="col">
+                    <div class="card" style="width: 20rem;">
+                        <img src="Image/images/eat-clean.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title"><strong>Phí Duy Mạnh</strong> đã đăng lúc 18:00</h5>
+                          <hr>
+                          <p class="card-text">Tôi rất thích ăn hoa quả vì thơm ngon mà còn 
+                            mang lại nhiều lợi ích cho sức khỏe. Những loại trái cây như xoài, táo, 
+                            cam luôn khiến tôi cảm thấy tươi mới và tràn đầy năng lượng. 
+                            </p>
+                        </div>
+                        <div class="card-body">
+                            <!-- button -->
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Sửa
+                                </button>
+                                
+                                <!-- Modal -->
+                                
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#xoa">
+                                    xóa
+                                </button>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModall">
+                                    Bình luận
+                                  </button>
+                                  <div class="modal fade" id="exampleModall" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h1 class="modal-title fs-5 " id="exampleModalLabel">Bình luận</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="mb-3">
+                                                    <label for="exampleFormControlTextarea1" class="form-label">
+                                                        <div class="container ">
+                                                            <div class="row">
+                                                                
+                                                              <div class="col">
+                                                                <img src="Image/images/avatar.png" class="img-thumbnail" alt="canhan" width="100px">
+                                                              </div>
+                                                              
+                                                          </div>                     
+                                                    </label>
+                                                    <br>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Phí ơi, bạn muốn viết gì thế" style="width: 450px;"></textarea>
+                                                    <!-- bo loc mau -->
+                                                     <br>
+                                                     <input type="color" class="form-control form-control-color p col-sm-4" id="exampleColorInput" value="#563d7c" title="Choose your color">
+                                                     <!-- load anh -->
+                                                      <br>
+                                                     <div class="container text-center">
+                                                        <div class="row">
+                                                          <div class="col">
+                                                            <div class="mb-3">
+                                                                <input class="form-control" type="file" id="formFile">
+                                                              </div>
+                                                          </div>
+                                                          <div class="col">
+                                                            <!-- doi tuong xem  -->
+                                                            <select class="form-select" aria-label="Default select example" >
+                                                                <option selected>Đối tượng xem</option>
+                                                                <option value="1">Công khai</option>
+                                                                <option value="2">Cá nhân</option>
+                                                                <option value="3">Bạn bè</option>
+                                                              </select>
+                                                          </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Bình luận</button>
+                                                    </div> 
+                                                </div>              
+                                        </div>
+                                  </div>
+                                  
+                              </div>
+                              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModallll">
+                                Xem
+                              </button>
+                              <div class="modal fade" id="exampleModallll" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-5" id="exampleModalLabel">Chi tiết bài viết</h1>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <img src="Image/images/eat-clean.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title"><strong>Phí Duy Mạnh</strong> đã đăng lúc 18:00</h5>
+                                          <hr>
+                                          <p class="card-text">Tôi rất thích ăn hoa quả vì thơm ngon mà còn 
+                                            mang lại nhiều lợi ích cho sức khỏe. Những loại trái cây như xoài, táo, 
+                                            cam luôn khiến tôi cảm thấy tươi mới và tràn đầy năng lượng. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                      </div>
+                      <div class="card-body">
+                        <!-- bình luận -->
+                         <strong>Bình luận</strong>
+                         <hr>
+                        <div class="container text-center">
+                            <div class="row">
+                              <div class="col">
+                                Huyền:
+                              </div>
+                              <div class="col">
+                                Có
+                              </div>
+                              <div class="col">
+                                (15:08)
+                              </div>
+                            </div>
+                          </div>
+                          <br>
+                          <!-- bl2 -->
+                          <div class="container text-center">
+                            <div class="row">
+                              <div class="col">
+                                Nhi:
+                              </div>
+                              <div class="col">
+                                không :-
+                              </div>
+                              <div class="col">
+                                (15:10)
+                              </div>
+                            </div>
+                          </div>
+                        
+                  </div>
+                  </div>
+                </div>
+                
+                
+                </div>
+              </div>
 
-        </article> -->
+        </article>
         
         </section>
-        <footer class="row bg-danger p-3 d-flex justify-content-center align-items-center text-white" style="height: 50px;">
+        <footer class="row bg-primary p-3 d-flex justify-content-center align-items-center text-white" style="height: 50px;">
             Phí Duy Mạnh
         </footer>
         
